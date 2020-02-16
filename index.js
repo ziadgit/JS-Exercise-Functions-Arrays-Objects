@@ -280,7 +280,7 @@ const addFive = (num) => {
 const argTimesTwo = (num) => {
      return num * 2
    }
-   
+
 /**
  * ### Challenge `carMaker`
  * THIS ONE IS A STRETCH GOAL. ATTEMPT IT ONLY AFTER
@@ -294,8 +294,15 @@ const argTimesTwo = (num) => {
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
 */
-function carMaker(/* code here */) {
-  /* code here */
+function carMaker(num) {
+  let mycar = {
+  odometer: num,
+  drive: function (distance) {
+    this.odometer = this.odometer+distance;
+    return this.odometer;
+    }
+  }
+  return mycar;
 }
 
 /// ////// END OF CHALLENGE /////////
