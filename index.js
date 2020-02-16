@@ -169,6 +169,8 @@ function getCarInfoByIndex(inventory, index) {
 */
 function getLastCarInfo(profile) {
   /* code here */
+  const thecar = profile[profile.length-1];
+  return `This is a ${thecar.car_make} ${thecar.car_model}`
 }
 
 /**
