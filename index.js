@@ -214,8 +214,9 @@ function sortCarInventory(inv) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(/* code here */) {
-  /* code here */
+function getModelYears(inv) {
+  const years = inv.map(c => c.car_year);
+  return years;
 }
 
 /**
@@ -230,8 +231,9 @@ function getModelYears(/* code here */) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
+function getOlderCars(inv, max) {
+  const cars = inv.filter(c => c.car_year <= max);
+  return cars;
 }
 
 /**
@@ -245,8 +247,8 @@ function getOlderCars(/* code here */) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars(/* code here */) {
-  /* code here */
+function getGermanCars() {
+  
 }
 
 /**
