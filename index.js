@@ -63,7 +63,7 @@ function makePersonObject(pid, pname, pemail) {
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName(person) {
-  let greeting = "Hello, my name is "
+  let greeting = "Hello, my name is ";
   return greeting + person.name;
 }
 
@@ -152,7 +152,8 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  const thecar = inventory[index];
+  return `This is a ${thecar.car_make} ${thecar.car_model}`
 }
 
 /**
@@ -166,7 +167,7 @@ function getCarInfoByIndex(inventory, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
+function getLastCarInfo(profile) {
   /* code here */
 }
 
