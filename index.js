@@ -247,8 +247,10 @@ function getOlderCars(inv, max) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars() {
-  
+function getGermanCars(inv) {
+  const german = ["Audi", "Mercedes-Benz", "Volkswagen", "BMW"];
+  const cars = inv.filter(c => german.includes(c.car_make));
+  return cars;
 }
 
 /**
